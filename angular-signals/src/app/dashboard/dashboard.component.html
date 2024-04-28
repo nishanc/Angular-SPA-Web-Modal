@@ -1,0 +1,6 @@
+<h2>Use Cases</h2>
+<div class="heroes-menu">
+  <a *ngFor="let case of useCases"
+    routerLink="/{{case.path}}">
+    {{case.text}}
+</a>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic SPA with Router</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 5px;
+      overflow: hidden;
+      background-color: #a8d9f9;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li button {
+      display: block;
+      color: rgb(110, 160, 141);
+      text-align: center;
+      padding: 5px 16px;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    
+    li button:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><button route="/">Home</b></li>
+        <li><button route="/about">About</button></li>
+        <li><button route="/contact">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="content">
+    <!-- Content will be loaded here -->
+  </div>
+  <script src="client.js"></script>
+
+</body>
+</html>
